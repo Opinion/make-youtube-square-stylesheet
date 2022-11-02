@@ -1,0 +1,56 @@
+/**
+ * Get squares back
+ * Can be installed with extensions such as Stylus
+ *
+ * I received the new UI in early november 2022.
+ * Many thumbnails have been essentially ruined in the new update.
+ * While you wait for youtube to fix it, you can use this stylesheet
+ * to fix it for yourself.
+ *
+ * Remember: The glow around the video player can be disabled by pressing
+ *           the cog in the video player and disabling "Ambient mode".
+ *
+ * ~Opinion
+ *
+ * https://github.com/Opinion/make-youtube-square-stylesheet
+ * Last modified: 2022-11-02
+ */
+
+/* Make thumbnails (videos and playlists) square */
+ytd-thumbnail a.ytd-thumbnail,
+ytd-thumbnail::before,
+ytd-playlist-thumbnail a.ytd-playlist-thumbnail,
+ytd-playlist-thumbnail::before{
+    border-radius: 0 !important;
+}
+
+/* Make playlist square */
+ytd-playlist-panel-renderer[modern-panels]:not([within-miniplayer]) #container.ytd-playlist-panel-renderer {
+    border-radius: 0 !important;
+}
+
+/* Make description square */
+ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata {
+    border-radius: 0 !important;
+}
+
+/*
+Remove annoying glow around the player
+Remember: Click player settings (cog icon in player) and disable "Ambient mode".
+*/
+#cinematics canvas {
+    display: none !important;
+}
+
+/* Make chat (on live videos) square */
+ytd-live-chat-frame#chat,
+ytd-live-chat-frame#chat > iframe#chatframe {
+    border-radius: 0 !important;
+}
+
+/* Make "Hide chat"/"Show chat" button (on live videos) square */
+ytd-live-chat-frame#chat > #show-hide-button,
+ytd-live-chat-frame#chat > #show-hide-button > ytd-toggle-button-renderer,
+ytd-live-chat-frame#chat > #show-hide-button > ytd-toggle-button-renderer button {
+    border-radius: 0 !important;
+}
