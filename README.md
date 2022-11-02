@@ -6,6 +6,7 @@ Copy the stylesheet from [/stylesheet.css](/stylesheet.css) and let it be includ
  - Stylus for Firefox: https://addons.mozilla.org/nb-NO/firefox/addon/styl-us/
  - Stylus for Chrome: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
  - Stylus for Opera: https://addons.opera.com/nb/extensions/details/stylus/
+ - See Stylus on GitHub: https://github.com/openstyles/stylus
 
 ~ Opinion
 
